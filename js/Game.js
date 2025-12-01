@@ -59,6 +59,8 @@ class Game {
     
 
     // Adicionar sprite de moeda no jogo
+
+    //Adicionar sprite obstacles
     
   }
   //criar funções para add moedas e combustivel
@@ -119,6 +121,8 @@ class Game {
           stroke(10);
           fill("red");
           ellipse(x, y, 60, 60);
+
+          //chamar função de coletar de combustivel e moedas
 
           //alterar a posição da câmera na direção y
           camera.position.y = cars[index - 1].position.y;
@@ -201,5 +205,13 @@ class Game {
       player.positionX += 5;
       player.update();
     }
+  }
+  //coletar combustivel 
+  handleFuel(index) {
+  
+  }
+  //coletar moedas
+  handlePowerCoins(index) {
+    
   }
 }
