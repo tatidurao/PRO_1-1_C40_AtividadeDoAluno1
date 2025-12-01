@@ -37,9 +37,8 @@ class Game {
     car2.scale = 0.07;
 
     cars = [car1, car2];
-
-    fuels = new Group();
-    powerCoins = new Group();
+    //criar grupos
+    
 
     var obstaclesPositions = [
       { x: width / 2 + 250, y: height - 800, image: obstacle2Image },
@@ -57,25 +56,15 @@ class Game {
     ];
 
     // Adicionar sprite de combustível no jogo
-    this.addSprites(fuels, 4, fuelImage, 0.02);
+    
 
     // Adicionar sprite de moeda no jogo
-    this.addSprites(powerCoins, 18, powerCoinImage, 0.09);
+    
   }
-
+  //criar funções para add moedas e combustivel
   addSprites(spriteGroup, numberOfSprites, spriteImage, scale) {
-    for (var i = 0; i < numberOfSprites; i++) {
-      var x, y;
-
-      x = random(width / 2 + 150, width / 2 - 150);
-      y = random(-height * 4.5, height - 400);
-
-      var sprite = createSprite(x, y);
-      sprite.addImage("sprite", spriteImage);
-
-      sprite.scale = scale;
-      spriteGroup.add(sprite);
-    }
+    
+    
   }
 
   handleElements() {
